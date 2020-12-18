@@ -17,14 +17,17 @@ export default function App() {
       case 'good':
         setGood(option => option + 1);
         break;
+
       case 'neutral':
         setNeutral(option => option + 1);
         break;
+
       case 'bad':
         setBad(option => option + 1);
         break;
+
       default:
-        throw new Error(`Something is wrong with ${option}`);
+        return;
     }
   };
 
